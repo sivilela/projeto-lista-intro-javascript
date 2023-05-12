@@ -19,18 +19,27 @@ function imprimeMensagem() {
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
   // implemente sua lógica aqui
-
+  const altura = prompt('Informe a altura: ')
+  const largura = prompt('Informe a largura: ')
+  console.log(altura*largura)
+  
 }
+
 
 // EXERCÍCIO 02
 function imprimeIdade() {
   // implemente sua lógica aqui
-
+  const anoAtual = prompt('Informe o ano atual: ')
+  const anoNasc = prompt('Informe seu ano de nascimento: ')
+  console.log(anoAtual-anoNasc)
+  
 }
+
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
+  return peso / (altura*altura)
 
 }
 
@@ -38,6 +47,10 @@ function calculaIMC(peso, altura) {
 function imprimeInformacoesUsuario() {
   // implemente sua lógica aqui
   // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
+  const nome = prompt('Informe seu nome: ')
+  const idade = prompt('Informe sua idade: ')
+  const email = prompt('Informe seu email: ')
+  console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
 
 }
 
@@ -50,7 +63,9 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-
+  const string = "oi"
+  const novaString = string.toUppCase()
+  return novaString
 }
 
 // EXERCÍCIO 07
