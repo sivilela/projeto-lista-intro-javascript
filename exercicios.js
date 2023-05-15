@@ -63,20 +63,21 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-  const string = "oi"
-  const novaString = string.toUppCase()
-  return novaString
+  return string.toUpperCase()
 }
+
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
+  return custo/valorIngresso
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
+  return string1.length === string2.length
+
 
 }
 
@@ -101,7 +102,7 @@ function trocaPrimeiroEUltimo(array) {
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
+  
 }
 
 // EXERCÍCIO 13
