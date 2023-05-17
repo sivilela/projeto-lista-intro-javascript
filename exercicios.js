@@ -57,7 +57,11 @@ function imprimeInformacoesUsuario() {
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-
+  const cor1 = prompt("Primeira cor favorita: ")
+  const cor2 = prompt("Segunda cor favorita: ")
+  const cor3 = prompt("Terceira cor favorita: ")
+  const cores = [cor1, cor2, cor3]
+  console.log(cores);
 }
 
 // EXERCÍCIO 06
@@ -84,14 +88,16 @@ function checaStringsMesmoTamanho(string1, string2) {
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-
+  return array[0]
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-
+  const ultimo = array[array.length - 1]
+  return ultimo
 }
+
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
@@ -102,19 +108,30 @@ function trocaPrimeiroEUltimo(array) {
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-  
+  const novaString1 = string1.toUpperCase()
+  const novaString2 = string2.toUpperCase()
+  return novaString1 === novaString2
+
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-
+  // const anoAtual = prompt("Informe o ano atual: ")
+  // const anoDeNascimento = prompt("Informe o ano de nascimento: ")
+  // const anoEmissaoRG = prompt("Informe o ano atual: ")
+  // const idade = anoAtual - anoDeNascimento
+  // const renovarEm5Anos = idade <= 20
+  // const renovarEm10Anos = idade >= 20 && idade <=50
+  // const renovarEm15Anos = idade >= 50
+  // console.log();
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-
+  const checaAno = (ano % 400 === 0) || (ano % 4 === 0 && ano % 100 != 0)
+  return checaAno
 }
 
 // EXERCÍCIO 15
