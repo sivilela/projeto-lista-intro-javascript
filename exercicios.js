@@ -103,6 +103,7 @@ function retornaUltimoElemento(array) {
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
+
 }
 
 // EXERCÍCIO 12
@@ -116,15 +117,16 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  // implemente sua lógica aqui
-  // const anoAtual = prompt("Informe o ano atual: ")
-  // const anoDeNascimento = prompt("Informe o ano de nascimento: ")
-  // const anoEmissaoRG = prompt("Informe o ano atual: ")
-  // const idade = anoAtual - anoDeNascimento
-  // const renovarEm5Anos = idade <= 20
-  // const renovarEm10Anos = idade >= 20 && idade <=50
-  // const renovarEm15Anos = idade >= 50
-  // console.log();
+  //implemente sua lógica aqui
+  const anoAtual = prompt("Informe o ano atual: ")
+  const anoDeNascimento = prompt("Informe o ano de nascimento: ")
+  const anoEmissaoRG = prompt("Informe o ano atual: ")
+  const idade = anoAtual - anoDeNascimento
+  const checkTempoDeID = anoAtual - anoEmissaoRG
+  const renovar = checkTempoDeID <= 20 || checkTempoDeID > 20 || checkTempoDeID <= 50 || checkTempoDeID >= 50
+  
+  console.log(renovar);
+
 }
 
 // EXERCÍCIO 14
