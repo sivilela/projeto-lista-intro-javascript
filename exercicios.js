@@ -126,6 +126,7 @@ function checaRenovacaoRG() {
   const renovar = checkTempoDeID <= 20 || checkTempoDeID > 20 || checkTempoDeID <= 50 || checkTempoDeID >= 50
   
   console.log(renovar);
+
 }
 
 // EXERCÍCIO 14
